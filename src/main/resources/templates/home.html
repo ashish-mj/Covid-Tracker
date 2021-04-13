@@ -1,22 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="https://www.thymeleaf.org">
 
 <head>
 
     <title>Covid Tracker</title>
-    <link rel="stylesheet" href="../static/css/normalize.css">
-    <link rel="stylesheet" href="../static/css/grid.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/grid.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400,700" rel="stylesheet">
-    <link rel="stylesheet" href="../static/css/ionicons.min.css">
-    <link rel="stylesheet" href="../static/css/home.css">
-    <link rel="icon" href="../static/images/mask.png" type="image/jpg">
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="icon" href="../static/images/virus.png" th:href="@{images/virus.png}"type="image/jpg">
     
 </head>
 
+
+
 <body>
+    <header>
+        <img src="../static/images/virus.png" alt="virus logo" class="logo virus" th:src="@{images/virus.png}">
         <h1>Covid Tracker</h1>
 
-        <p>Welcome to the page</p>
+   </header> 
+
+   <div class="display">
+       <div class="row">
+           <p th:text="${stats}"></h1>
+
+        </div>
+    </div>
+
+    <footer class="footer-section">
+        <div class="names">
+            <ul>
+                <li>Aditya Sumanth</li>
+                <li>Akshay Dhage</li>
+                <li>Ashish M J</li>
+                <li>Pavan Hatwar</li>
+            </ul>
+        </div>
+    </footer>
+
 </body>   
 
 </html>

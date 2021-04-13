@@ -20,8 +20,16 @@ import org.springframework.stereotype.Service;
 @Service
 public class DataService {
 
+	
+
+
 	private static String url = "https://api.covid19india.org/csv/latest/state_wise.csv";
 	private ArrayList<Data> allData = new ArrayList<>(); 
+	
+	
+	public ArrayList<Data> getAllData() {
+		return allData;
+	}
 	
 	
 	@PostConstruct
