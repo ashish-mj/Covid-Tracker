@@ -24,15 +24,31 @@
 
    <div class="display">
        <div class="row">
-           <p th:text="${stats}"></h1>
-
+        <table>
+            <tr>
+              <th><img src="../static/images/united-states.png" alt="states logo" class="icon" th:src="@{images/united-states.png}">STATE</th>
+              <th><img src="../static/images/confirmation.png" alt="confirmed logo" class="icon" th:src="@{images/confirmation.png}">CONFIRMED</th>
+              <th><img src="../static/images/graph.png" alt="active logo" class="icon" th:src="@{images/graph.png}">ACTIVE</th>
+              <th><img src="../static/images/recovered.png" alt="recovered logo" class="icon" th:src="@{images/recovered.png}">RECOVERED</th>
+              <th><img src="../static/images/corpse.png" alt="deaths logo" class="icon" th:src="@{images/corpse.png}">DEATHS</th>
+            </tr>
+            <div class="scroll">
+            <tr th:each="row : ${stats}">
+              <td th:text="${row.state}"></td>
+              <td th:text="${row.confirmed}">0</td>
+              <td th:text="${row.active}">0</td>
+              <td th:text="${row.recovered}">0</td>
+              <td th:text="${row.deaths}">0</td>
+            </tr>
+            </div>
+          </table>
         </div>
     </div>
 
     <footer class="footer-section">
         <div class="names">
             <ul>
-                <li>Aditya Sumanth</li>
+                <li></li>
                 <li>Akshay Dhage</li>
                 <li>Ashish M J</li>
                 <li>Pavan Hatwar</li>
