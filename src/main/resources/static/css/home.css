@@ -5,7 +5,7 @@
 }
 html,body{
     background-color: black;
-    color: #555;
+    color: white;
     font-family: 'Lato', 'Arial' ,sans-serif;
     font-weight: 300;
     font-size: 20px;
@@ -29,7 +29,7 @@ header{
     margin-top: -10px;
     padding: 5px;
     background-color: black;
-    color: #555;
+    color:white;
 }
 
 .logo{
@@ -46,6 +46,7 @@ header{
     height: 80vh;
     background-color: black;
     margin-top: -10px;
+    overflow: scroll;
 }
 
 footer{
@@ -68,10 +69,37 @@ footer{
 }
 
 .icon{
-    margin-top: 5px;
     width: 40px;
     height: 40px;
 }
-.scroll{
-    overflow: scroll;
-}
+
+
+td {
+    padding: 10px 45px;
+    text-align: center;
+  }
+
+  th{
+    padding:0px 10px 10px 10px;
+    text-align: center;
+  }
+
+  .state{
+      color: white;
+  }
+
+  .confirm{
+      color: #0AFF00;
+  }
+
+  .active{
+      color: red;
+  }
+
+  .recover{
+      color:yellow;
+  }
+
+  .death{
+      color:white;
+  }
